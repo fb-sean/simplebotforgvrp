@@ -7,7 +7,7 @@ client.on('message', async message => { // le event
     let channel = message.guild.channels.cache.get('847216168997879869') // get le channel
   
     if(message.channel == channel){ // if channel = our love channel
-    let content = message.attachments.first() || message.content.includes("https://") // CHECKING YOUR SHITY MSG
+    let content = message.attachments.first() || message.content.includes("https://") || message.content.includes("http://") // CHECKING YOUR SHITY MSG
     if(!content){
   
         if(message.author.bot) return  // NO ONE NEEDS BOTS
